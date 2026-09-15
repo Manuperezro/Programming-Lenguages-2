@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming Missions Lab – Interactive Learning Experience</title>
+  <meta name="description" content="Interactive learning experience for Gateway Level 2 Computing students covering programming languages, procedural flow, event-driven triggers, OOP concepts, visual blocks, and Python coding.">
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <h1 class="brand-title">
+          <span>🚀</span> Programming Missions Lab
+          <span class="brand-badge">Gateway Level 2</span>
+        </h1>
+      </div>
+
+      <div class="header-stats">
+        <div class="stat-pill mission-pill" id="stat-mission">Mission 1 / 8</div>
+        <div class="stat-pill score-pill" id="stat-score">0 XP</div>
+      </div>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="mute-btn" title="Toggle Sound">🔊</button>
+        <button class="icon-btn" id="reset-btn" title="Reset Lab Progress">🔄</button>
+      </div>
+    </div>
+
+    <!-- Progress Bar Track -->
+    <div class="progress-bar-wrapper">
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Interactive Workspace Canvas -->
+  <main class="app-workspace">
+
+    <!-- Stepper Navigation Bar -->
+    <nav class="section-nav-bar" id="stepper-nav" aria-label="Mission Navigation"></nav>
+
+    <!-- MISSION CONTAINERS (1 - 8) -->
+    <section class="mission-container" id="mission-1" aria-label="Mission 1 – Language Detective"></section>
+    <section class="mission-container" id="mission-2" aria-label="Mission 2 – Ticket Machine"></section>
+    <section class="mission-container" id="mission-3" aria-label="Mission 3 – Control the Robot"></section>
+    <section class="mission-container" id="mission-4" aria-label="Mission 4 – Event-Driven"></section>
+    <section class="mission-container" id="mission-5" aria-label="Mission 5 – Game Objects"></section>
+    <section class="mission-container" id="mission-6" aria-label="Mission 6 – Scratch Blocks"></section>
+    <section class="mission-container" id="mission-7" aria-label="Mission 7 – Quick Check"></section>
+    <section class="mission-container" id="mission-8" aria-label="Mission 8 – Build a Vending Machine"></section>
+
+  </main>
+
+  <!-- Results Dashboard Modal -->
+  <div class="results-modal" id="results-modal"></div>
+
+  <!-- Application Modules -->
+  <script src="js/data.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
